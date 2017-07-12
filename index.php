@@ -1,3 +1,13 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#1</title>
+</head>
+<body>
 <?php
 /**
  * Created by PhpStorm.
@@ -11,6 +21,7 @@
  *
  * every task i will require to this file
  */
+
 echo "<h2>1.1 Задание #1</h2>";
 
 //переменные
@@ -32,3 +43,10 @@ for ($i=0; $i<count($chars_arr); $i++) {
     echo "Мне "."$chars_arr[$i]"."28"."$chars_arr[$i]"." лет<br/>" ;
 }
 
+//подключаем файлы подзадач
+require_once "task-1-2.php";
+
+
+?>
+</body>
+</html>
