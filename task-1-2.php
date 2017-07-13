@@ -7,7 +7,7 @@
  */
 echo "<h2>Задание # 1.2</h2>";
 
-$pictures = ["all" => "80", "pensils" => "23", "pens" => "400", "total" => ""];
+$pictures = ["all" => "80", "pensils" => "23", "pens" => "40", "total" => ""];
 
 //continue 00:50 commit , branch, and push
 
