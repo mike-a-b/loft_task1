@@ -47,6 +47,10 @@ for ($i=0; $i<count($chars_arr); $i++) {
 require_once "task-1-2.php";
 require_once "task-1-3.php";
 require_once "task-1-4.php";
+require_once "task-1-5.php";
+require_once "task-1-6.php";
+require_once "task-1-7.php";
+
 
 ?>
 </body>
