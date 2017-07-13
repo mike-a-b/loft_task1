@@ -24,6 +24,7 @@
 
 echo "<h2>1.1 Задание #1</h2>";
 
+
 //переменные
 $name = "Mikhail";
 $age = "28";
@@ -42,7 +43,6 @@ $chars_arr = ["\"", "!", "|", "\\", "/", "'", "\"", "\\"];
 for ($i=0; $i<count($chars_arr); $i++) {
     echo "Мне "."$chars_arr[$i]"."28"."$chars_arr[$i]"." лет<br/>" ;
 }
-
 //подключаем файлы подзадач
 require_once "task-1-2.php";
 require_once "task-1-3.php";
