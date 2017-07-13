@@ -24,7 +24,6 @@
 
 echo "<h2>1.1 Задание #1</h2>";
 
-
 //переменные
 $name = "Mikhail";
 $age = "28";
@@ -50,7 +49,7 @@ require_once "task-1-4.php";
 require_once "task-1-5.php";
 require_once "task-1-6.php";
 require_once "task-1-7.php";
-
+require_once "task-1-8.php";
 
 ?>
 </body>
