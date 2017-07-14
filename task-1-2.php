@@ -14,6 +14,6 @@ $pictures = ["all" => "80", "pensils" => "23", "pens" => "40", "total" => ""];
 if (isset($pictures)) {
     $pictures['total'] = ($pictures["all"] - ($pictures["pensils"]+$pictures["pens"]));
     if (!empty($pictures["total"]) && ($pictures["total"] > 0)) {
-        echo "Дети раскрасили красками: ". $pictures["total"] . "<br/>";
+        echo "Дети раскрасили красками: {$pictures["total"]}<br/>";
     }
 }

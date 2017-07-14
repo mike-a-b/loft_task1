@@ -5,24 +5,32 @@
  * Date: 13.07.17
  * Time: 19:50
  */
-echo "<h2>Задание # 1.8</h2>";
+echo "<h2>Задание # 1.8 v.2</h2>";
 $str = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cum cumque dolorem eum, eveniet fuga " .
 "laborum laudantium nam quis soluta!";
-echo "</br>";
-echo $str;
+echo "$str</br>";
+
 $exp_arr = explode(" ", $str);
-//var_dump($exp_arr);
-$impl_arr = [];
-$count = count($exp_arr)-1;
-$count2 = 0;
-do {
-    $impl_arr[$count2] = ($exp_arr[$count] . "*");
-    $count--;
-    $count2++;
-    if ($count == 0) {
-        $impl_arr[] = $exp_arr[count($exp_arr)-($count2+1)];
-    }
-} while (/*++*/$count);
-print_r($impl_arr);
-$impl_arr = implode("*", $impl_arr);
-echo $impl_arr . "</br>";
+//var_export($exp_arr);
+
+foreach ($exp_arr as $item) {
+    echo "$item ";
+}
+
+$result = [];
+foreach ($exp_arr as &$item) {
+    $res_str = "";
+    $i = 0;
+    $c = strlen($item)-1;
+    do {
+        $swap = $item[$i];
+        $item[$i] = $item[$c];
+        $item[$c] = $swap;
+        $c--;
+        $i++;
+    } while ($i <= $c);
+    $result[] = $item;
+}
+
+$exp_arr = implode("*", $result);
+echo "$exp_arr<br/>";
